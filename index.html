@@ -13,13 +13,47 @@
   </head>
   <body>
     <header class="container-fluid"><h1>This is a racing game game</h1></header>
-    <main class="container">
-      <div class="row">
-        <div class="col-6 col-md-12">
+    <main class="container-fluid bg-img style">
+      <div class="row d-flex">
+        <div class="col-12 col-md-6">
           <img
+            class="w-75 hover"
             src="https://www.bimmerboost.com/images/imported/2011/04/16-3.jpg"
             alt="dragTree"
+            onclick="race()"
           />
+        </div>
+        <div class="col-12 col-md-6">
+          <h1>Profit from winning races: <span id="money-won"></span></h1>
+          <button class="btn btn-info" onclick="buyInternals()">
+            <h4>Upgrade internals</h4>
+            <p>
+              (Increases races won by
+              <span id="internals-multiplier"></span> per stage)
+            </p>
+            Internal Stage: <span id="internals-stage"></span>
+          </button>
+          <button class="btn btn-info" onclick="buyTuner()">
+            <h4>Visit Tuner</h4>
+            <p>
+              (Increases races won by <span id="tuner-multiplier"></span> per
+              stage)
+            </p>
+            Tune Stage: <span id="tuner-stage"></span>
+          </button>
+          <button class="btn btn-info" onclick="buyBoost()">
+            <h4>Add Boost</h4>
+            <p>
+              (Increases races won by <span id="boost-multiplier"></span> per
+              stage)
+            </p>
+            Boost Stage: <span id="boost-stage"></span>
+          </button>
+          <button class="btn btn-info" onclick="buyDriver()">
+            <h4>Hire driver</h4>
+            <p>(Wins <span id="driver-multiplier"></span> races per 3secs)</p>
+            Drivers Hired: <span id="drivers-hired"></span>
+          </button>
         </div>
       </div>
     </main>

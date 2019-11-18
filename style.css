@@ -1,0 +1,19 @@
+.clickable {
+  width: 80%;
+}
+
+.bg-img {
+  background-image: url("https://myteslaadventure.com/wp-content/uploads/2018/04/p100DL-driver-view-takeoff.gif");
+  background-color: #cccccc;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 700px;
+}
+
+.style {
+  text-align: center;
+}
+
+.hover {
+  cursor: pointer;
+}
